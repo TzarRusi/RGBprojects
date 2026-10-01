@@ -54,8 +54,9 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);  // Указываем I2C адрес
 const char* host = "RiseClock";
 // Указываем идентификатор и пароль от своей WiFi-сети
 
-const char* ssid = "xxxxxx";
-const char* password = "xxxxxxx";
+#include "secrets.h"
+const char* ssid = WIFI_SSID;
+const char* password = WIFI_PASSWORD;
 
 
 #include "EEPROM.h"
